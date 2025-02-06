@@ -1,0 +1,2 @@
+# Haskell Lazy Evaluation Bug
+This repository demonstrates a subtle bug in Haskell code involving lazy evaluation and mutable state (`IORef`). The `bug.hs` file contains the buggy code.  The issue stems from the interaction between lazy evaluation and the asynchronous nature of `IORef` modifications. The solution, in `bugSolution.hs`, addresses this by ensuring strict evaluation to guarantee the expected order of operations.
